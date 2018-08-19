@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="Triangle.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+function init()
+{
+	drawTriangleTest();	
+}
+</script>
+
+<title>Draw Triangle</title>
+
+<body onload="init()">
+
+	<div>
+	
+		<h1>Draw Triangle</h1>
+	
+		<form action="">
+			<input type="radio" name="triangle" id="a"> Set A
+			<input type="radio" name="triangle" id="b"> Set B
+			<input type="radio" name="triangle" id="c"> Set C
+		</form>
+		
+		<canvas id="DrawTriangleCanvas" onclick="drawTriangleTest(event)" width="512" height="512"/>
+		
+	</div>
+
+
+
+</body>
+
+</html>

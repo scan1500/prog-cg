@@ -1,0 +1,88 @@
+body 
+{
+	font-family: calibri;
+}
+
+header 
+{
+	font-family: 'calibri light'
+	font-weight: bold;
+	font-size:32pt;
+	color:#000020;
+    text-align: left;
+	margin-left: 58pt;
+	padding-top:28pt;
+	padding-bottom:10pt;
+    margin-bottom: 10pt;
+}
+
+.letsplay 
+{
+    width: auto;
+    align-items: left;
+    display: grid;
+	justify-content: space-between;	
+	grid-template-columns: 1fr;
+	grid-gap: 12pt;
+}
+
+.topbar
+{
+	grid-row: 1;
+	grid-column: 1 / span 2;
+}
+
+.output 
+{
+    border: 1px solid black;
+	grid-column: 1 / span 2;
+	grid-row: 2 ;
+	padding-bottom: 0px;
+	width: 100%;
+	height: 512px;
+}
+
+.bottombarleft
+{
+	text-align: left;
+	color:#aaaaaa	;
+	padding-top:10pt;
+	padding-bottom:10pt;
+    line-height: normal;
+	grid-column: 1;
+	grid-row: 4;
+
+}
+
+.bottombarright
+{
+	text-align: right;
+	color:#aaaaaa;
+	padding-top:10pt;
+	padding-bottom:10pt;
+    line-height: normal;
+	grid-column: 3;
+	grid-row: 4;
+}
+
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block}
+.w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.w3-text-black,.w3-hover-text-black:hover{color:#000!important}
+.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+
+
+.uisection
+{
+	text-align: left;
+	color:#aaaaaa;
+	padding-top:10pt;
+	padding-bottom:10pt;
+	margin-left:10pt;
+    line-height: normal;
+	
+	grid-column: 3;
+	grid-row: 2;
+}
+

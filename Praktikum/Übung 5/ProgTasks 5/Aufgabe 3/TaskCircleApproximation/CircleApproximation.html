@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="LetsPlay.css">
+ <script type="text/javascript" src="./CircleApproximation.js"></script>
+<script>
+	function toggleFullScreen()
+	{
+		var isFullScreen = (document.webkitIsFullScreen || document.isFullScreen || document.mozFullscreenEnabled);
+		var requestFunc = (document.documentElement.requestFullScreen || document.documentElement.webkitRequestFullScreen|| document.documentElement.mozRequestFullScreen);
+		var cancelFunc = (document.cancelFullScreen || document.webkitCancelFullScreen || document.mozCancelFullScreen());
+		if(isFullScreen)
+		{
+			cancelFunc.call(document)
+		} else
+		{
+			requestFunc.call(document.documentElement)
+		}
+	}
+
+	
+	function init() 
+	{
+		var canvas = document.getElementById("canvas");
+		start(canvas);
+	}
+	
+</script>
+
+</head>
+<title>Circle Approximation</title>
+
+<body onload="init()">
+    <header>Circle Approximation</header>
+    
+	<div class="letsplay" style="margin-left:58pt; margin-top:8pt; margin-right:58pt">
+		<div class="topbar">
+			<button class="w3-button w3-blue w3-hover-red w3-hover-text-black" 
+			        onclick="toggleFullScreen()">Toggle Full Screen</button>
+		</div>
+		
+		<canvas id="canvas" class="output" ></canvas>
+		
+		<div id="uicontainer" class="uisection">
+			<p>Number of Semgents: <span id="segmentsSpan"></span></p>
+			<input type="range" min="3" max="50" value="12" class="slider" id="segmentsSlider" />
+		</div>
+	
+		<div class="bottombarleft">&#x24B8; 2017 by Prof. Dr. Quirin Meyer</div>
+		<div class="bottombarright">Computer Graphics</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="Circle.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+function init()
+{
+	drawCircle();
+	drawCircleBoundary();
+	drawCircleCanvasContext();
+}
+</script>
+
+<title>Circle</title>
+
+<body onload="init()">
+	
+	<div>
+		<h1>Draw Circle</h1>
+		<canvas id="DrawCircleCanvas" width="256" height="256"/>
+	</div>
+	
+	<div>
+		<h1>Draw Circle Boundary</h1>
+		<canvas id="DrawCircleBoundaryCanvas" width="256" height="256"/>
+	</div>
+	<div>
+		<h1>Draw Circle With CanvasRenderingContext2D</h1>
+		<canvas id="drawCircleCanvasContext" width="256" height="256"/>
+	</div>
+	<div>
+		<h1>Draw SVG Circle</h1>
+		<svg width="256" height="256">
+			<circle cx="128", cy="128", r="96" fill="#7f7f7f", stroke="#000000", stroke-width="10"/>
+		</svg>
+	</div>
+</body>
+
+</html>

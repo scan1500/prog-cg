@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="Plasma.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+function init()
+{
+	initAnimation();
+	drawPlasma();
+}
+</script>
+
+<title>Plasma</title>
+
+
+<body onload="init()">
+
+
+	<h1>Plasma</h1>
+	<span id="x"></span>X<span id="y"></span>Y
+	
+	
+	<div id="CanvasContainer">
+		<canvas id="Task01aCanvas" onmousemove="drawPlasma(event)" class="output" width="512" height="512"/>
+	</div>
+	
+	
+</body>
+
+</html>
